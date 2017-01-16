@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:id="@+id/m_View">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="90px"
+            android:id="@+id/linearLayout1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:inputType="numberDecimal"
+                android:hint="Podaj kwote"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_waluta_1"
+                android:layout_gravity="center" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_kombi_1"
+                android:gravity="center" />
+        </LinearLayout>
+        <Switch
+            android:text="dodac / odjac druga walute?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:id="@+id/switch_dodac_odjac"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <Switch
+            android:text="mnozenie / dzielenie wlaczyc?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/switch_dziel_mnoz"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:gravity="bottom"
+            android:id="@+id/linearLayout2"
+            android:layout_marginTop="0.0dp">
+            <Button xmlns:tools="http://schemas.android.com/tools"
+                android:text="znak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/button_znak"
+                tools:visibility="visible"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25.0dp" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout3"
+                android:layout_marginBottom="40dp">
+                <EditText xmlns:tools="http://schemas.android.com/tools"
+                    android:inputType="numberDecimal"
+                    android:hint="Podaj kwote"
+                    android:gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_waluta_2"
+                    tools:visibility="visible" />
+                <Spinner xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_kombi_2"
+                    android:gravity="center"
+                    tools:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearLayout4"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="200.0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/txt_wynik"
+                    android:gravity="center" />
+                <Spinner xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_kombi_3"
+                    android:gravity="center"
+                    tools:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="200dp"
+                android:id="@+id/linearLayoutimagine">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton1"
+                    android:layout_gravity="center" />
+                <Button
+                    android:text="Oblicz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/button_oblicz"
+                    android:layout_gravity="center"
+                    android:height="100dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
